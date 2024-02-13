@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&family=Poppins&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/background.jpg);
+    background-position: center center;
+    background-size: max(1700px, 100vw);
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+}
+
+.main .box {
+    height: 90vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+.logo {
+    width: 130px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 75vw;
+    height: 100px;
+    margin: auto;
+    justify-content: space-between;
+    z-index: 10;
+}
+@media screen and (max-width:500px) {
+    nav{
+        max-width: 85vw;
+    }
+}
+
+nav img {
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.btn {
+    background-color: rgba(23, 23, 23, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 4px 15px;
+    margin: 0px 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+}
+
+.btn-red {
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    height: calc(100% - 100px);
+    position: relative;
+    z-index: 10;
+    gap: 20px;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+.hero> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width:500px) {
+    .hero> :nth-child(1) {
+        font-size: 28px;
+    }
+    
+    .hero> :nth-child(2) {
+        font-size: 14px;
+    }
+    
+    .hero> :nth-child(3) {
+        font-size: 10px;
+    }
+} 
+.email-input-with-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.email-input-with-button input {
+    width: max(300px, 25vw);
+    height: 50px;
+    background-color: rgba(23, 23, 23, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 0px 20px;
+    color: white;
+}
+
+.email-input-with-button button {
+    color: white;
+    background-color: red;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 24px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+
+.separation {
+    height: 8px;
+    background-color: #232323;
+}
+
+.first {
+    display: flex;
+    width: 75vw;
+    height: 80vh;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-sec-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.first-sec-text :nth-child(1) {
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+
+}
+
+.first-sec-text :nth-child(2) {
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.first-sec-text :nth-child(3) {
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.first-sec-img {
+    position: relative;
+}
+
+.first-sec-img img {
+    max-width: 460px;
+}
+
+.first-sec-img video {
+    position: absolute;
+    top: 72px;
+    width: 335px;
+    right: 65px;
+    z-index: -1;
+}
+
+@media screen and (max-width:500px) {
+    .first-sec-text :nth-child(1) {
+        font-size: 28px;
+
+    }
+    
+    .first-sec-text :nth-child(2) {
+        font-size: 14px;
+    }
+    
+    .first-sec-text :nth-child(3) {
+        font-size: 14px;
+    }
+    
+    .first-sec-img img {
+        max-width: 323px;
+    }
+    
+    .first-sec-img video {
+        top: 50px;
+    width: 235px;
+    right: 46px;
+    }
+    
+}
+
+.second {
+    display: flex;
+    width: 75vw;
+    height: 80vh;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.second-sec-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-sec-img img {
+    width: 500px;
+}
+
+.second-sec-text :nth-child(1) {
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.second-sec-text :nth-child(2) {
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.second-sec-text :nth-child(3) {
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.second-sec-text :nth-child(4) {
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:500px) {
+    .second-sec-img img {
+        width: 320px;
+    }
+    
+    .second-sec-text :nth-child(1) {
+        font-size: 28px;
+    }
+    
+    .second-sec-text :nth-child(2) {
+        font-size: 28px;
+    }
+    
+    .second-sec-text :nth-child(3) {
+        font-size: 14px;
+    }
+    
+    .second-sec-text :nth-child(4) {
+        font-size: 14px;
+    }
+}
+
+
+.third {
+    display: flex;
+    width: 75vw;
+    height: 80vh;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.third-sec-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.third-sec-text :nth-child(1) {
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+
+}
+
+.third-sec-text :nth-child(2) {
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.third-sec-text :nth-child(3) {
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.third-sec-img {
+    position: relative;
+}
+
+.third-sec-img img {
+    max-width: 460px;
+}
+
+.third-sec-img video {
+    position: absolute;
+    top: 46px;
+    width: 290px;
+    right: 93px;
+    z-index: -1;
+}
+
+@media screen and (max-width:500px) {
+    .third-sec-text :nth-child(1) {
+        font-size: 28px;
+    }
+    
+    .third-sec-text :nth-child(2) {
+        font-size: 14px;
+    }
+    
+    .third-sec-text :nth-child(3) {
+        font-size: 14px;
+    }
+    
+    
+    .third-sec-img img {
+        max-width: 323px;
+    }
+    
+    .third-sec-img video {
+        top: 22px;
+        width: 200px;
+        right: 66px;
+    }
+}
+
+.fourth {
+    display: flex;
+    width: 75vw;
+    height: 80vh;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fourth-sec-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.fourth-sec-img img {
+    width: 545px;
+}
+
+.fourth-sec-text :nth-child(1) {
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.fourth-sec-text :nth-child(2) {
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.fourth-sec-text :nth-child(3) {
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.fourth-sec-text :nth-child(4) {
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:500px) {
+    .fourth-sec-img img {
+        width: 323px;
+    }
+    
+    .fourth-sec-text :nth-child(1) {
+        font-size: 28px;
+    }
+    
+    .fourth-sec-text :nth-child(2) {
+        font-size: 14px;
+    }
+    
+    .fourth-sec-text :nth-child(3) {
+        font-size: 14px;
+    }
+    
+    .fourth-sec-text :nth-child(4) {
+        font-size: 14px;
+    }
+}
+
+.faq {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 10px;
+}
+
+.faq h2 {
+    color: white;
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+.faq-box {
+    display: flex;
+    color: white;
+    background-color: #2d2d2d;
+    width: 75vw;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0px;
+    padding: 20px;
+
+}
+.faq-box:hover{
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+    background-color: #434343;
+}
+
+.faq-box span {
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+.text-after-faq {
+    font-family: 'Martin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:500px) {
+    .faq h2 {
+        font-size: 20px;
+    }
+    .faq-box {
+        width: 80vw;
+        padding: 10px;
+    
+    }
+    .faq-box span {
+        font-size: 24px;
+    }
+    .text-after-faq {
+        font-size: 12px;
+    }
+}
+
+footer{
+    width: 80vw;
+    margin: auto;
+    padding: 30px;
+}
+footer> div:first-child{
+    color: rgba(255, 255, 255, 0.7);
+    padding: 34px 0px;
+}
+footer>div:first-child a{
+    color: rgba(255, 255, 255, 0.7);
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.footer-items a{
+    font-family: 'Martin Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width:500px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+}
